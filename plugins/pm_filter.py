@@ -425,7 +425,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             msg = await client.send_cached_media(
                 chat_id=AUTH_CHANNEL,
                 file_id=file_id,
-                caption=f'<b>Hai 👋 {query.from_user.mention}</b> 😍\n\n<code>{title}</code>\n\n⚠️ This file will be deleted in 5 minute as it has copyright ... !!!\n\nAfter moving from here to saved message or somewhere else, download ... !!!\n\n♻️ 𝗝𝗢𝗜𝗡 : <b>@SS_Linkz</b>\n♻️ 𝗝𝗢𝗜𝗡 : <b>@Netflix_Movies_Group</b>',
+                caption=f'<b>Hai 👋 {query.from_user.mention}</b> 😍\n\n<code>{title}</code>\n\n⚠️ This file will be deleted in 5 minute as it has copyright ... !!!\n\nAfter moving from here to saved message or somewhere else, download ... !!!\n\n♻️ 𝗝𝗢𝗜𝗡 : <b>@FilmZoneX</b>\n♻️ 𝗝𝗢𝗜𝗡 : <b>@RequestZoneX</b>',
                 protect_content=True if ident == "filep" else False 
             )
             msg1 = await query.message.reply(
@@ -495,8 +495,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-        InlineKeyboardButton('◽ Channel', url='https://t.me/ss_linkz'),
-        InlineKeyboardButton('Group ◽', url ='https://t.me/Netflix_Movies_Group')
+        InlineKeyboardButton('◽ Channel', url='https://t.me/Filmzonex'),
+        InlineKeyboardButton('Group ◽', url ='https://t.me/Requestzonex')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
